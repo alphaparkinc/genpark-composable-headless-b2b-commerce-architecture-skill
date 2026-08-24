@@ -1,0 +1,41 @@
+{
+  "name": "genpark-composable-headless-b2b-commerce-architecture-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Composable headless B2B commerce architecture with cXML punchout integration, contract pricing, and multi-tier approval workflows.",
+  "author": "genpark",
+  "category": "b2b-commerce",
+  "tags": [
+    "headless-b2b",
+    "composable-commerce",
+    "cxml-punchout",
+    "contract-pricing",
+    "spryker"
+  ],
+  "inputs": {
+    "buyer_org_id": {
+      "type": "string"
+    },
+    "approval_tier": {
+      "type": "string"
+    },
+    "catalog_sku_list": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "quote_id": {
+      "type": "string"
+    },
+    "cxml_punchout_supported": {
+      "type": "boolean"
+    },
+    "automated_approval_threshold_eur": {
+      "type": "number"
+    },
+    "api_first_graphql_schema_valid": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
